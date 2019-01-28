@@ -23,13 +23,13 @@ class CashRegister
     
     # this will save our transaction to be used when needed.  Also reduces the amount of code required to retrieve the most recent change in transaction. 
     
-
-    
     @total += @last_transaction
     
     # our total is now equal to the quantity of the items being purchased by the price of the item. 
     
+    @items << title
     
+    # we add the title of our goods to the items array. 
   end
   
   def apply_discount
