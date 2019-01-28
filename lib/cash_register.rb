@@ -52,7 +52,7 @@ end
 end
 
   def items
-    @items
+    self.@@all
   end
 
   def void_last_transaction
