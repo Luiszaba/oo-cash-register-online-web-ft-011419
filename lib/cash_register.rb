@@ -26,7 +26,7 @@ class CashRegister
     @total = @total + @last_transaction
     
     # our total is now equal to the quantity of the items being purchased by the price of the item. 
-    
+    while i < quantity
     @items << title
     
     # we add the title of our goods to the items array. 
