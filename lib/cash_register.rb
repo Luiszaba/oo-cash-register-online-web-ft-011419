@@ -41,7 +41,7 @@ end
 end
 
   def items
-    self.@items
+    self.@learnitems
 end
 
   def void_last_transaction
