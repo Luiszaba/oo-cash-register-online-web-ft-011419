@@ -58,9 +58,9 @@ end
     title.times do 
     @items << title
   end
+end
 
   def void_last_transaction
     @total = @total - @last_transaction
   end
   end
-end
