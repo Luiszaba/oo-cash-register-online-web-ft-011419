@@ -34,6 +34,7 @@ class CashRegister
     # we add the title of our goods to the items array. 
   end
 end
+end
   
   def apply_discount
     
