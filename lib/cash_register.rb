@@ -55,7 +55,7 @@ end
 end
 
   def items
-    title.times do 
+    self.times do 
     @items << title
   end
 end
