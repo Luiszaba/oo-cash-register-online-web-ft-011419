@@ -29,7 +29,7 @@ class CashRegister
     
     # our total is now equal to the quantity of the items being purchased by the price of the item. 
     
-    title.each {|i| i>>@items}
+    @items << title
 
     # we add the title of our goods to the items array. 
   end
