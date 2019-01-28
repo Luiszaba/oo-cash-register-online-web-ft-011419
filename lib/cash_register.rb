@@ -7,7 +7,7 @@ class CashRegister
   @all = []
   
   def initialize(total)
-    @total = 0
+    @total = total
     @discount = 0
     @items = []
     
