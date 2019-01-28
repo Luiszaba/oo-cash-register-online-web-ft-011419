@@ -8,7 +8,7 @@ class CashRegister
   
   def initialize(total=0)
     @total = total
-    @discount = 20
+    @discount = discount
     @items = []
     
     # we initialize the CashRegister with a total (quantity*price(discount)).  We also create an array containing all future items for purchase.
@@ -32,8 +32,8 @@ class CashRegister
   
   def apply_discount
     if @discount != 0
-       @discount = discount/100.to_f
-      @total = total-(@total*@discount.to_i)
+       @discount = discount/100
+      @total = total- (total*discount)
       "After the discount, the total comes to $#{@total}."
     else 
       "There is no discount to apply."
