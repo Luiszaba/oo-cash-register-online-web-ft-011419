@@ -30,6 +30,7 @@ class CashRegister
     @total += @last_transaction
     
     # our total is now equal to the quantity of the items being purchased by the price of the item. 
+    
   end
   
   def apply_discount
