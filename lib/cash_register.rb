@@ -40,7 +40,7 @@ class CashRegister
        # turn discount into a float point
        # total minus discount
        # winning
-      "After the discount, the total comes to $#{@total.to_f}."
+      "After the discount, the total comes to $#{@total}."
     else 
       "There is no discount to apply."
   
