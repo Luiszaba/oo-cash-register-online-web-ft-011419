@@ -34,7 +34,7 @@ class CashRegister
     if @discount = 0
       
       
-      "Your "
+      ""
 
 
 else 
