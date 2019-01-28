@@ -34,7 +34,7 @@ class CashRegister
     if @discount!=0
        
     @discount = @discount/100.to_f
-    require 'pry'
+    require.pry
     @total = @total-(@total*@discount)
     
        # total
