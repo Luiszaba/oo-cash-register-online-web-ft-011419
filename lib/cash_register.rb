@@ -29,7 +29,7 @@ class CashRegister
     
     # our total is now equal to the quantity of the items being purchased by the price of the item. 
     
-    @items << title
+    items << title
 
     # we add the title of our goods to the items array. 
   end
@@ -55,8 +55,7 @@ end
 end
 
   def items
-    quantity.times do
-      items << title
+    @items
   end
 
   def void_last_transaction
