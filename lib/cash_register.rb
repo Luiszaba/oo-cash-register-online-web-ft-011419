@@ -55,7 +55,8 @@ end
 end
 
   def items
-    @items << items
+    quantity.times do
+      items << title
   end
 
   def void_last_transaction
