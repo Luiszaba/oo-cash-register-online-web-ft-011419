@@ -4,7 +4,8 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :discount, :price, :title, :quantity, :items, :last_transaction
   
-  @all = []
+  def self.all
+    @all << self
   
   def initialize(discount=0)
     @total = 0
