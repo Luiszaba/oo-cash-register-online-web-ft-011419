@@ -55,8 +55,8 @@ end
 end
 
   def items
-    self.times do 
-    @items << title
+    for @title.each do |item_array| 
+    @items << item_array
   end
 end
 
