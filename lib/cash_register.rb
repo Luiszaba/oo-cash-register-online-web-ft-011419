@@ -32,8 +32,8 @@ class CashRegister
   
   def apply_discount
     if discount=0
-       total = total-(total*discount)
-      "After the discount, the total comes to $#{total}."
+       price = total-(total*discount)
+      "After the discount, the total comes to $#{price}."
     else 
       "There is no discount to apply."
   
@@ -46,6 +46,5 @@ end
 
   def void_last_transaction
     void = @total - @last_transaction
-    void
 end
 end
