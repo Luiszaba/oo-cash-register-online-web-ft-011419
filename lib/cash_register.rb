@@ -8,7 +8,7 @@ class CashRegister
   
   def initialize(total=0)
     @total = 0
-    @discount = 0
+    @discount = discount
     @items = []
     
     # we initialize the CashRegister with a total (quantity*price(discount)).  We also create an array containing all future items for purchase.
