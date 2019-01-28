@@ -38,7 +38,7 @@ class CashRegister
     if @discount!=0
 
     @discount = @discount/100
-    @total = @price-(@discount*@total)
+    @total = -(@discount*@total)
     
        # total
        # turn discount into a float point
