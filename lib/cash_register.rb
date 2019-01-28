@@ -35,6 +35,7 @@ class CashRegister
 
     @discount = @discount/100.to_f
     
+    
        # total
        # turn discount into a float point
        # total minus discount
