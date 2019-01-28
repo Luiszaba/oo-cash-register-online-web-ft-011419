@@ -56,7 +56,7 @@ end
 
   def items
     @title.each do |item_array| 
-    @items.push[item_array]
+    @items << item_array
   end
 end
 
