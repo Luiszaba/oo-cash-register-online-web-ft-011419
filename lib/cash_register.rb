@@ -33,7 +33,7 @@ class CashRegister
   def apply_discount
     if @discount!=0
 
-    @total = @total-(@discount)
+    @discount = @discount/100.to_f
     
        # total
        # turn discount into a float point
