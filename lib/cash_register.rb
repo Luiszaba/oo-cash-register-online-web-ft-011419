@@ -12,7 +12,7 @@ class CashRegister
     # we initialize the CashRegister with a total (quantity*price(discount)).  We also create an array containing all future items for purchase.
   end
   
-  def add_item(title, price, quantity =1)
+  def add_item(title, price, quantity =5)
     @title = title
     @price = price
     @quantity = quantity
