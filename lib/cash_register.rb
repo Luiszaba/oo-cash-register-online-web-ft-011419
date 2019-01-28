@@ -55,8 +55,8 @@ end
 end
 
   def items
-    @title.each.with_index do |item_array, i| 
-    @items.push[item_array,i]
+    @title.each do |item_array| 
+    @items.push[item_array]
   end
 end
 
