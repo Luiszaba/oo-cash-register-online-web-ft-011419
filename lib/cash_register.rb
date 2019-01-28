@@ -18,15 +18,19 @@ class CashRegister
     @title = title
     @price = price
     @quantity = quantity
+    
     # create the read/write for title, price, and quantity.
     
     @last_transaction = quantity*price
+    
     # this will save our transaction to be used when needed.  Also reduces the amount of code required to retrieve the most recent change in transaction. 
     
     @items << title
+    
     # we add the title of our goods to the items array. 
     
     @total += @last_transaction
+    
     # our total is now equal to the quantity of the items being purchased by the price of the item. 
   end
   
@@ -34,7 +38,7 @@ class CashRegister
     if @discount!=0
 
     @discount = @discount/100
-    @total = @total-(@discount*@total)
+    @total = @price-(@discount*@total)
     
        # total
        # turn discount into a float point
