@@ -5,6 +5,7 @@ class CashRegister
   
   
   def initialize(discount=0)
+    
     @total = 0
     @discount= discount
     @items = []
@@ -13,6 +14,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity =1)
+    
     @title = title
     @price = price
     @quantity = quantity
@@ -27,17 +29,15 @@ class CashRegister
     
     # our total is now equal to the quantity of the items being purchased by the price of the item. 
     
-    i=0
-    until i < quantity
-    @items << title
-    
+    title.each {|i| i>>@items}
+
     # we add the title of our goods to the items array. 
   end
 end
   
   def apply_discount
+    
     if @discount!=0
-
     @discount = @discount/100.to_f
     @total = @total-(@total*@discount)
     
